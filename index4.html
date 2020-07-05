@@ -1,0 +1,131 @@
+<html>
+<head><title>Core Java</title>
+<style>
+#header{background-color:Bisque;
+width:auto;
+height:auto;}
+
+
+#B{text-align:center;}
+#B1{text-align:center;}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1 style="text-align:center;font-size:300%;">Literals</h1>
+<p style="text-align:center;font-size:200%;">Any constant value which can be assigned to the variable is called Literals</p>
+<img src="images/literal.png" alt="error" width="auto" height="auto" style="padding:30px 0px 0px 370px;"><br><br>
+
+<p style="padding:15px;font-size:150%"><u><b>Integer type literal</u>:For integral data type we can specify literal value in the following way. </b>
+<br><br>
+1.Decimal literal (base 10):<br>
+   example:<br><br>
+   int x = 10;  
+
+<br><br>
+2.Octal form literal (base 8):<br>
+   example:<br><br>
+   int x = 010;
+<br><br>
+3.Hexadecimal literal (base 16):<br>
+   example:<br><br>
+   int x = 0x0010;
+
+</p>
+
+<p style="padding:15px;font-size:150%;"><u><b>Floating-point literal</u>:For floating data type we can specify literal value only in decimal form and we cannot specify in octal and hexadecimal form.</b>
+<br><br>
+float f = 123.456;      (we get compile time error because JVM by-default considered literals as Double )
+
+<br><br>
+float f = 123.456f;     (valid because we explicit double into float)<br><br>
+double d = 13.258;      (valid)
+<br></p>
+
+
+<p style="font-size:130%;color:red;padding:15px;">** By-default every floating point literal is of double type and
+we cannot assign directly to the float variable.But we can specify floating point literal as float type
+by suffixed with f or F.</p>
+
+<p style="font-size:150%;padding:15px;">
+**we can assign integral literal directly to floating point variables but we cannot assign a integral variables with floating point literal.
+<br><br>
+double d = 10; (valid)<br><br>
+int x = 10.2;   (invalid)
+</p>
+
+
+<p style="font-size:150%;padding:15px;">
+<b><u>boolean literal</u>:The only allowed value for boolean data type are true or false.</b>
+<br><br>
+boolean b = true; (valid)<br><br>
+boolean b= 10;   (invalid because we assign integer value to boolean type)<br><br>
+boolean b= True;  (invalid because the value of boolean literals should be in lowercase)
+
+</p>
+
+<p style="font-size:150%;padding:15px;">
+<b><u>char literal</u>:We can specify char literal as single character within single quotes.</b>
+<br><br>
+char ch = 'a';  (valid)<br><br>
+char ch = "a";  (invalid because we cannot assign a string literal to char data type)<br><br>
+char ch = 'ab';  (invalid because we can only assign single alphabet character to char data type.)<br>
+ <p style="font-size:150%;padding:15px;">
+ <b>** We can specify char literal as integral literal which represent unicode value of the character and that integral can be specified either in decimal,octal and hexadecimal forms.But allowed range is 0 to 65535.<b>
+ 
+ <br><br>
+ char ch = 97; (valid)<br><br>
+ char ch = 0777; (valid)<br><br>
+ char ch = 0xface; (valid)
+ </p>
+ <p style="font-size:150%;padding:15px;">
+ <b>** We can represent char literal in Unicode representation which is nothing but '\uxxxx' .<b>
+ 
+ <br><br>
+ char ch = '\u0062'; (valid)<br><br>
+ </p>
+</p>
+
+<p style="font-size:150%;padding:15px;">
+ <b><u>String literal</u>:Any sequence of character within double quotes is treated as String literal.<b>
+ 
+ <br><br>
+ String s = "hello world"; <br><br>
+ 
+ </p>
+
+<h3 style="padding:15px;font-size:150%;color:purple;">NOTE:</h3>
+<p style="padding:15px;font-size:150%;">
+1.For integral data type until 1.6 version we can specify literal value in the following ways:<br><br>
+Decimal form,Octal form and Hexadecimal form.<br><br>
+But from 1.7 version onwards we can specify literal value even in Binary form also(allowed digit are 0 & 1):<br><br>
+Literal value should be prefixed with 0b or 0B.
+<br><br>
+int x = 0b1111;<br><br>
+
+2.Usage of underscore symbol in numeric literal from 1.7 version onwards we can use underscore(_) symbol 
+between digit of numeric literal.<br><br>
+double d = 1_23_456.7_8_9;
+<br><br>
+int x = 123_32_43;
+<br><br>
+
+</p>
+
+
+
+
+<br><br><br><br><br>
+<hr style="width:100%;color:black:size:50px;"><br><br><br>
+<h1 id="B"><a href="index5.html"><u>NEXT PAGE</u></a></h1><br><br>
+<h1 id="B1"><a href="index3.html"><u>PREVIOUS PAGE</u></a></h1>
+<br><br><br><br>
+
+</div>
+
+
+
+</body>
+</html>
