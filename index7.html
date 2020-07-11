@@ -1,0 +1,111 @@
+<html>
+<head><title>Core Java</title>
+<style>
+#header{background-color:Bisque;
+width:auto;
+height:auto;}
+
+
+#B{text-align:center;}
+#B1{text-align:center;}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1 style="text-align:center;font-size:300%;">Var_arg method<br><br>
+(Variable number of argument method)</h1>
+<p style="padding:15px;font-size:150%;">
+1. Until 1.4 version we cannot declare a method with variable number of argument if there is a change in 
+number of argument compulsory we should go for new method.It increase length of code and reduce readability.
+<br><br>
+2. To overcome this problem SUN people introduce var_arg method in 1.5 version according to this we can declare a method which can take variable number of argument,such type of method called var_arg method.
+<br><br>
+3. we can declare a var_arg method as follows:
+<br><br>
+method_name(data_type...  variable_name)
+<br><br>
+e.g: m1(int... x)
+<br><br>
+*we can call this method by passing any number of int value including zero number:
+<br><br>
+m1();
+<br><br>
+m1(10);
+<br><br>
+m1(10,30,20);
+<br><br>
+m1(10,20,30,40,50);
+<br><br><br>
+sample program:<br><br><br>
+ class Test<br>
+ {<br>
+ public static void sum(int... x)<br>
+ {<br>
+ int total = 0;<br><br>
+ for(int x1:x)<br>
+ {<br><br>
+ total = total +x1;<br><br>
+ }<br>
+ system.out.println(total);
+ <br>
+ }
+ <br><br>
+ public static void main(String[] args)<br>
+ {<br>
+ <br>
+sum(); o/p:0;
+<br><br>
+sum(10,20); o/p:30
+<br><br>
+sum(10,20,30);o/p:60
+<br><br>
+ }<br>
+<br>
+}  
+
+<br><br>
+4. Internally var_arg method parameter will be converted into one-dimensional array.Hence, within the var_arg method we can differentiate value by using INDEX.
+<br><br>
+5.Inside a class we cannot declare var_arg method and corresponding one-dimensional array method simultaneously otherwise we will get compile time error.
+<br><br>
+e.g:<br><br>
+class Test{<br>
+public void m1(int... x){<br>
+system.out.println("var_arg");            <b>   (invalid we will get compile time error saying 
+"cannot declare both m1(int[] x) and m1(int... x) in Test")</b><br>
+}<br><br>
+public void m1(int[] x){<br>
+system.out.println("one-dimensional array");<br>
+}<br><br>
+}
+<br><br>
+<b><i> NOTE:</i></b>
+<br><br>
+In general var_arg method will get least priority i.e if no other method matched than only var_arg method will get chance,it is exactly same as default case inside switch.
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+<br><br><br><br><br>
+<hr style="width:100%;color:black:size:50px;"><br><br><br>
+<h1 id="B"><a href="index8.html"><u>NEXT PAGE</u></a></h1><br><br>
+<h1 id="B1"><a href="index6.html"><u>PREVIOUS PAGE</u></a></h1>
+<br><br><br><br>
+
+</div>
+
+
+
+</body>
+</html>
