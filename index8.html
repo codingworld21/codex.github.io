@@ -1,0 +1,71 @@
+<html>
+<head><title>Core Java</title>
+<style>
+#header{background-color:Bisque;
+width:auto;
+height:auto;}
+
+
+#B{text-align:center;}
+#B1{text-align:center;}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1 style="text-align:center;font-size:300%;">main method</h1>
+<p style="padding:15px;font-size:150%;">
+1. Whether class contain main method or not and whether main method is declared according to requirement or not this things won't be checked by compiler at runtime JVM is responsible to check this things.<br><br>
+2. If JVM unable to find main method than we will get,runtime Exception saying"NoSuchMethodError:main".
+<br><br>
+3. At runtime JVM always search main method with following prototype:
+
+<br><br>
+<img src="images/main.png" alt="Error">
+<br><br>
+4. The syntax is very strict and we perform any change we will get runtime exception.
+<br><br>
+5. Even though above syntax in image is very strict,but only the following changes are acceptable:
+<br><br>
+a. Instead of public static we can take static public i.e in Java the order of modifier is not important.
+<br><br>
+b. we can declare String[] in any acceptable form.
+<br><br>
+c. Instead of args we can take any valid Java Identifier.
+<br><br>
+d. we can replace String array with var_arg parameter.
+<br><br>
+<b>main(String[] args) = main(String... args)</b>
+<br><br>
+e. We can declare main method with following modifiers final,synchronized,strictfp.
+<br><br>
+<b>static final synchronized strictfp public void main(String[] args)</b>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+<br><br><br><br><br>
+<hr style="width:100%;color:black:size:50px;"><br><br><br>
+<h1 id="B"><a href="index9.html"><u>NEXT PAGE</u></a></h1><br><br>
+<h1 id="B1"><a href="index7.html"><u>PREVIOUS PAGE</u></a></h1>
+<br><br><br><br>
+
+</div>
+
+
+
+</body>
+</html>

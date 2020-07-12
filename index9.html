@@ -1,0 +1,64 @@
+<html>
+<head><title>Core Java</title>
+<style>
+#header{background-color:Bisque;
+width:auto;
+height:auto;}
+
+
+#B{text-align:center;}
+#B1{text-align:center;}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1 style="text-align:center;font-size:300%;">command line argument</h1>
+<p style="padding:15px;font-size:150%;">
+1. The argument which are passing from command prompt are called command line argument.
+<br><br>
+2. With the command line argument JVM will create an Array anf by passing that array as argument,JVM with main method.
+<br><br>
+String[] args = {"a","b","c"}
+<br><br>
+
+e.g <br><br>
+java test a b c <br><br>
+ args[0] o/p:a<br><br>
+ args[1] o/p:c <br><br>
+ args.length; o/p:3 <br><br>
+ <br>
+ sample program:<br><br>
+class Test{<br>
+public static void main(String[] args){<br>
+int n = Integer.parseInt(args[0]);<br>
+system.out.println("the square of number is"+(n*n));
+<br>
+}<br>
+}
+<br><br>
+java Test 5 <br><br>we get output 25
+
+<br><br>
+3. The main objective of command line argument is we can customize behaviour of the main method.
+<br><br>
+4. Within main method command line argument are available in String type.
+
+
+</p>
+
+
+
+<br><br><br><br><br>
+<hr style="width:100%;color:black:size:50px;"><br><br><br>
+<h1 id="B"><a href="index10.html"><u>NEXT PAGE</u></a></h1><br><br>
+<h1 id="B1"><a href="index8.html"><u>PREVIOUS PAGE</u></a></h1>
+<br><br><br><br>
+
+</div>
+
+
+
+</body>
+</html>
